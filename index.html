@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <p><b>Color match game</b></p>
+      <p>Use the hue, saturation, and value inputs to change the color on the left.
+        <br>The goal is to make the left color match the right.</p>
+      <br><span>
+      <button id="resetButton" onclick="Reset()">Reset</button>
+      <button id="checkButton" onclick="Check()">Check</button>
+      <label id="attemptCounter">Attempts: 0</label>
+      <label id="accuracyLabel">Accuracy: ?.??%</label>
+      </span>
+    </main>
+    <label>Hue </label><input id="hueSpinner" type="number" value="50" max="101" min="-1"><br>
+    <label>Saturation </label><input id="satSpinner" type="number" value="50" max="101" min="-1"><br>
+    <label>Value </label><input id="valSpinner" type="number" value="50" max="101" min="-1"><br>
+    <label id="secret"></label>
+    <script src="sketch.js"></script>
+  </body>
+</html>
